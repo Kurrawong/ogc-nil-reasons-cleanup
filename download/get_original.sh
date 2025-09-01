@@ -1,0 +1,1 @@
+curl https://defs.opengis.net/prez-backend/sparql --data query=PREFIX%20skos%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0ADESCRIBE%20%3Fx%20%7B%7B%20BIND%28%3Chttp%3A%2F%2Fwww.opengis.net%2Fdef%2Fnil%3E%20as%20%3Fx%29%20%7DUNION%20%20%7B%3Fx%20skos%3AinScheme%20%3Chttp%3A%2F%2Fwww.opengis.net%2Fdef%2Fnil%3E%7D%7D -X POST
