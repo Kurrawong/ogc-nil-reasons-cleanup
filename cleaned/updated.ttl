@@ -15,7 +15,7 @@ knil: a skos:ConceptScheme ;
     dcterms:isVersionOf ogc:nil ;
     dcterms:modified "2025-09-02"^^xsd:date ;
     dcterms:title "Nil reasons (Kurrawong derivative v1.0)"@en ;
-    rdfs:comment "Derivative work of OGC nil reasons with lowercase-only concepts and proper hasTopConcept relationships. Intended for contribution back to OGC."@en ;
+    rdfs:comment "Derivative work of OGC nil reasons with uppercase-only concepts and hasTopConcept relationships. Intended for contribution back to OGC."@en ;
     owl:versionInfo "1.0" .
 
 <http://www.opengis.net/def/nil/> a skos:Collection ;
@@ -28,12 +28,10 @@ knil: a skos:ConceptScheme ;
     skos:prefLabel "Concepts in OGC nils" .
 
 nil:AboveDetectionRange a skos:Concept ;
-    rdfs:label "above detection range",
-        "above detection range"@en ;
     dc:creator "GMLJP2 SWG" ;
-    dc:date "2010-03-23" ;
+    dc:date "2010-03-23"^^xsd:date ;
     dc:source "OGC 07-036 Clause 8.2.3" ;
-    dcterms:created "2010-03-23" ;
+    dcterms:created "2010-03-23"^^xsd:date ;
     dcterms:modified "2012-02-14"^^xsd:date ;
     mmon:status status:valid ;
     skos:altLabel "Above Detection Range"@en ;
@@ -42,12 +40,10 @@ nil:AboveDetectionRange a skos:Concept ;
     skos:prefLabel "above detection range"@en .
 
 nil:BelowDetectionRange a skos:Concept ;
-    rdfs:label "below detection range",
-        "below detection range"@en ;
     dc:creator "GMLJP2 SWG" ;
-    dc:date "2010-03-23" ;
+    dc:date "2010-03-23"^^xsd:date ;
     dc:source "OGC 07-036 Clause 8.2.3" ;
-    dcterms:created "2010-03-23" ;
+    dcterms:created "2010-03-23"^^xsd:date ;
     dcterms:modified "2012-02-14"^^xsd:date ;
     mmon:status status:valid ;
     skos:altLabel "Below Detection Range"@en ;
@@ -56,12 +52,10 @@ nil:BelowDetectionRange a skos:Concept ;
     skos:prefLabel "below detection range"@en .
 
 nil:inapplicable a skos:Concept ;
-    rdfs:label "inapplicable",
-        "inapplicable"@en ;
     dc:creator "GML SWG" ;
-    dc:date "2010-03-23" ;
+    dc:date "2010-03-23"^^xsd:date ;
     dc:source "OGC 07-036 Clause 8.2.3" ;
-    dcterms:created "2010-03-23" ;
+    dcterms:created "2010-03-23"^^xsd:date ;
     dcterms:modified "2012-02-14"^^xsd:date ;
     mmon:status status:valid ;
     skos:altLabel "Inapplicable"@en ;
@@ -70,12 +64,10 @@ nil:inapplicable a skos:Concept ;
     skos:prefLabel "inapplicable"@en .
 
 nil:template a skos:Concept ;
-    rdfs:label "template",
-        "template"@en ;
     dc:creator "GML SWG" ;
-    dc:date "2010-03-23" ;
+    dc:date "2010-03-23"^^xsd:date ;
     dc:source "OGC 07-036 Clause 8.2.3" ;
-    dcterms:created "2010-03-23" ;
+    dcterms:created "2010-03-23"^^xsd:date ;
     dcterms:modified "2012-02-14"^^xsd:date ;
     mmon:status status:valid ;
     skos:altLabel "Template"@en ;
@@ -84,12 +76,10 @@ nil:template a skos:Concept ;
     skos:prefLabel "template"@en .
 
 nil:withheld a skos:Concept ;
-    rdfs:label "withheld",
-        "withheld"@en ;
     dc:creator "GML SWG" ;
-    dc:date "2010-03-23" ;
+    dc:date "2010-03-23"^^xsd:date ;
     dc:source "OGC 07-036 Clause 8.2.3" ;
-    dcterms:created "2010-03-23" ;
+    dcterms:created "2010-03-23"^^xsd:date ;
     dcterms:modified "2012-02-14"^^xsd:date ;
     mmon:status status:valid ;
     skos:altLabel "Withheld"@en ;
@@ -98,13 +88,10 @@ nil:withheld a skos:Concept ;
     skos:prefLabel "withheld"@en .
 
 nil:missing a skos:Concept ;
-    rdfs:label "missing",
-        "Missing"@en,
-        "missing"@en ;
     dc:creator "GML SWG" ;
-    dc:date "2010-03-23" ;
+    dc:date "2010-03-23"^^xsd:date ;
     dc:source "OGC 07-036 Clause 8.2.3" ;
-    dcterms:created "2010-03-23" ;
+    dcterms:created "2010-03-23"^^xsd:date ;
     dcterms:modified "2012-02-14"^^xsd:date ;
     mmon:status status:valid ;
     rdfs:comment "More details are available via the exactMatch reference, which should be used for citation by preference"@en ;
@@ -113,17 +100,13 @@ nil:missing a skos:Concept ;
     skos:exactMatch <http://www.opengis.net/def/waterml/2.0/quality/missing> ;
     skos:inScheme ogc:nil,
         ogc:waterml ;
-    skos:prefLabel "Missing"@en,
-        "missing"@en .
+    skos:prefLabel "missing"@en .
 
 nil:unknown a skos:Concept ;
-    rdfs:label "unknown",
-        "Unknown"@en,
-        "unknown"@en ;
     dc:creator "GML SWG" ;
-    dc:date "2010-03-23" ;
+    dc:date "2010-03-23"^^xsd:date ;
     dc:source "OGC 07-036 Clause 8.2.3" ;
-    dcterms:created "2010-03-23" ;
+    dcterms:created "2010-03-23"^^xsd:date ;
     dcterms:modified "2012-02-14"^^xsd:date ;
     mmon:status status:valid ;
     rdfs:comment "More details are available via the exactMatch reference, which should be used for citation by preference"@en ;
@@ -132,8 +115,7 @@ nil:unknown a skos:Concept ;
     skos:exactMatch <http://www.opengis.net/def/waterml/2.0/medium/Unknown> ;
     skos:inScheme ogc:nil,
         ogc:waterml ;
-    skos:prefLabel "Unknown"@en,
-        "unknown"@en .
+    skos:prefLabel "unknown"@en .
 
 ogc:waterml skos:hasTopConcept nil:missing,
         nil:unknown .

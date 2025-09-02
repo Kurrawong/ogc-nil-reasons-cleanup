@@ -45,10 +45,63 @@ def clean_rdf():
         g.remove((None, mm.hasProfile, None))
         g.remove((None, RDFS.seeAlso, None))
         
-        # # Change Collection to ConceptScheme
-        # for s, p, o in g.triples((None, RDF.type, SKOS.Collection)):
-        #     g.remove((s, RDF.type, SKOS.Collection))
-        #     g.add((s, RDF.type, SKOS.ConceptScheme))
+        # Fix date datatypes - ensure all dates have XSD date datatype
+        dcterms = Namespace("http://purl.org/dc/terms/")
+        dc = Namespace("http://purl.org/dc/elements/1.1/")
+        xsd = Namespace("http://www.w3.org/2001/XMLSchema#")
+        
+        # Find and fix date literals without proper datatype
+        date_properties = [dcterms.created, dcterms.modified, dc.date]
+        for date_prop in date_properties:
+            for s, p, o in list(g.triples((None, date_prop, None))):
+                if isinstance(o, Literal) and o.datatype != xsd.date:
+                    # Remove old literal and add with proper datatype
+                    g.remove((s, p, o))
+                    g.add((s, p, Literal(str(o), datatype=xsd.date)))
+        
+        # Organize labels using proper SKOS semantics
+        for subject in g.subjects(RDF.type, SKOS.Concept):
+            # Get all current labels for this concept
+            rdfs_labels = list(g.objects(subject, RDFS.label))
+            pref_labels = list(g.objects(subject, SKOS.prefLabel))
+            alt_labels = list(g.objects(subject, SKOS.altLabel))
+            
+            # Group all labels by their lowercase text and language
+            all_labels = []
+            for label in rdfs_labels + pref_labels + alt_labels:
+                if isinstance(label, Literal):
+                    all_labels.append((str(label), label.language, label))
+            
+            # Group by lowercase text and language
+            label_groups = {}
+            for text, lang, literal in all_labels:
+                key = (text.lower(), lang)
+                if key not in label_groups:
+                    label_groups[key] = []
+                label_groups[key].append((text, lang, literal))
+            
+            # Clear existing labels to rebuild cleanly
+            g.remove((subject, RDFS.label, None))
+            g.remove((subject, SKOS.prefLabel, None))
+            g.remove((subject, SKOS.altLabel, None))
+            
+            # For each unique label (by lowercase text + language), set proper SKOS labels
+            for (text_lower, lang), group in label_groups.items():
+                if not lang:  # Skip labels without language tags
+                    continue
+                    
+                # Find lowercase and capitalized versions
+                lowercase_versions = [item for item in group if item[0][0].islower()]
+                capitalized_versions = [item for item in group if item[0][0].isupper()]
+                
+                # Set prefLabel (lowercase) and altLabel (capitalized)
+                if lowercase_versions:
+                    pref_text = lowercase_versions[0][0]  # Use first lowercase version
+                    g.add((subject, SKOS.prefLabel, Literal(pref_text, lang=lang)))
+                
+                if capitalized_versions:
+                    alt_text = capitalized_versions[0][0]  # Use first capitalized version
+                    g.add((subject, SKOS.altLabel, Literal(alt_text, lang=lang)))
         
         # Add versioning metadata for your derivative work
         knil = additional_namespaces['knil']
@@ -64,7 +117,7 @@ def clean_rdf():
         g.add((knil[''], dcterms.modified, Literal("2025-09-02", datatype=xsd.date)))
         g.add((knil[''], dcterms.isVersionOf, og_nil))
         g.add((knil[''], owl.versionInfo, Literal("1.0")))
-        g.add((knil[''], RDFS.comment, Literal("Derivative work of OGC nil reasons with lowercase-only concepts and proper hasTopConcept relationships. Intended for contribution back to OGC.", lang="en")))
+        g.add((knil[''], RDFS.comment, Literal("Derivative work of OGC nil reasons with uppercase-only concepts and hasTopConcept relationships. Intended for contribution back to OGC.", lang="en")))
         
         # Update concepts to point to your scheme
         for concept in g.subjects(SKOS.inScheme, og_nil):
