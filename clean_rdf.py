@@ -61,7 +61,7 @@ def clean_rdf():
         g.add((knil[''], RDF.type, SKOS.ConceptScheme))
         g.add((knil[''], dcterms.title, Literal("Nil reasons (Kurrawong derivative v1.0)", lang="en")))
         g.add((knil[''], dcterms.creator, URIRef("https://orcid.org/0000-0002-3322-1868")))
-        g.add((knil[''], dcterms.modified, Literal("2025-01-01", datatype=xsd.date)))
+        g.add((knil[''], dcterms.modified, Literal("2025-09-02", datatype=xsd.date)))
         g.add((knil[''], dcterms.isVersionOf, og_nil))
         g.add((knil[''], owl.versionInfo, Literal("1.0")))
         g.add((knil[''], RDFS.comment, Literal("Derivative work of OGC nil reasons with lowercase-only concepts and proper hasTopConcept relationships. Intended for contribution back to OGC.", lang="en")))

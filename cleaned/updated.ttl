@@ -13,7 +13,7 @@
 knil: a skos:ConceptScheme ;
     dcterms:creator <https://orcid.org/0000-0002-3322-1868> ;
     dcterms:isVersionOf ogc:nil ;
-    dcterms:modified "2025-01-01"^^xsd:date ;
+    dcterms:modified "2025-09-02"^^xsd:date ;
     dcterms:title "Nil reasons (Kurrawong derivative v1.0)"@en ;
     rdfs:comment "Derivative work of OGC nil reasons with lowercase-only concepts and proper hasTopConcept relationships. Intended for contribution back to OGC."@en ;
     owl:versionInfo "1.0" .
