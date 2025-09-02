@@ -19,13 +19,18 @@ A cleaned derivative of the OGC nil reasons vocabulary with SKOS Concept Scheme 
 
 4. **Metadata Removal**: Stripped implementation/technical artifacts (`hasProfile`, `seeAlso` references)
 
-5. **Versioning**: Added derivative work metadata with Kurrawong namespace
+5. **Scheme Restructuring**: 
+   - Created new Kurrawong derivative ConceptScheme 
+   - Updated concept `skos:inScheme` relationships to point to new Concept Scheme
+   - Added `skos:hasTopConcept` relationships (inverse of inScheme)
+
+6. **Versioning**: Added derivative work metadata with Kurrawong namespace
 
 ## Files
 
 - `download/original.ttl` - Original OGC nil reasons vocabulary
 - `clean_rdf.py` - Python script performing all transformations
-- `cleaned/updated.ttl` - Output with cleaned, standardized vocabulary
+- `cleaned/updated.ttl` - Output with changes described above
 
 ## Usage
 
