@@ -1,219 +1,323 @@
-<http://www.opengis.net/def/nil/OGC/0/missing> <http://www.w3.org/2000/01/rdf-schema#label> "missing" .
-<http://www.opengis.net/def/nil/OGC/0/missing> <http://www.w3.org/2000/01/rdf-schema#label> "missing"@en .
-<http://www.opengis.net/def/nil/OGC/0/missing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://www.opengis.net/def/nil/OGC/0/missing> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.opengis.net/def/nil/OGC/0/missing?_profile=alt> .
-<http://www.opengis.net/def/nil/OGC/0/missing> <http://www.w3.org/2000/01/rdf-schema#comment> "More details are available via the exactMatch reference, which should be used for citation by preference"@en .
-<http://www.opengis.net/def/nil/OGC/0/missing> <http://www.w3.org/2004/02/skos/core#altLabel> "Missing"@en .
-<http://www.opengis.net/def/nil/OGC/0/missing> <http://purl.org/dc/terms/created> "2010-03-23" .
-<http://www.opengis.net/def/nil/OGC/0/missing> <http://purl.org/dc/elements/1.1/creator> "GML SWG" .
-<http://www.opengis.net/def/nil/OGC/0/missing> <http://www.w3.org/2004/02/skos/core#prefLabel> "Missing"@en .
-<http://www.opengis.net/def/nil/OGC/0/missing> <http://purl.org/dc/elements/1.1/source> "OGC 07-036 Clause 8.2.3" .
-<http://www.opengis.net/def/nil/OGC/0/missing> <http://www.w3.org/2002/07/owl#sameAs> <http://www.opengis.net/def/nil/ogc/0/missing> .
-<http://www.opengis.net/def/nil/OGC/0/missing> <http://www.w3.org/2000/01/rdf-schema#label> "Missing"@en .
-<http://www.opengis.net/def/nil/OGC/0/missing> <http://www.w3.org/2004/02/skos/core#definition> "The correct value is not readily available to the sender of this data. Furthermore, a correct value may not exist"@en .
-<http://www.opengis.net/def/nil/OGC/0/missing> <http://www.w3.org/2004/02/skos/core#prefLabel> "missing"@en .
-<http://www.opengis.net/def/nil/OGC/0/missing> <http://purl.org/dc/terms/modified> "2012-02-14"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://www.opengis.net/def/nil/OGC/0/missing> <http://www.opengis.net/def/metamodel/ogc-na/status> <http://www.opengis.net/def/status/valid> .
-<http://www.opengis.net/def/nil/OGC/0/missing> <http://www.w3.org/2004/02/skos/core#inScheme> <http://www.opengis.net/def/nil> .
-<http://www.opengis.net/def/nil/OGC/0/missing> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.opengis.net/doc/gml#clause-8.2.3.1> .
-<http://www.opengis.net/def/nil/OGC/0/missing> <http://www.opengis.net/def/metamodel/hasProfile> <http://www.opengis.net/def/nil/OGC/0/missing?_profile=conceptscheme> .
-<http://www.opengis.net/def/nil/OGC/0/missing> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.opengis.net/def/waterml/2.0/quality/missing> .
-<http://www.opengis.net/def/nil/OGC/0/missing> <http://www.w3.org/2004/02/skos/core#inScheme> <http://www.opengis.net/def/waterml> .
-<http://www.opengis.net/def/nil/OGC/0/missing> <http://purl.org/dc/elements/1.1/date> "2010-03-23" .
-<http://www.opengis.net/def/nil/ogc/0/withheld> <http://www.opengis.net/def/metamodel/hasProfile> <http://www.opengis.net/def/nil/ogc/0/withheld?_profile=conceptscheme> .
-<http://www.opengis.net/def/nil/ogc/0/withheld> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.opengis.net/def/nil/ogc/0/withheld?_profile=alt> .
-<http://www.opengis.net/def/nil/ogc/0/withheld> <http://www.w3.org/2000/01/rdf-schema#label> "withheld"@en .
-<http://www.opengis.net/def/nil/ogc/0/withheld> <http://www.opengis.net/def/metamodel/ogc-na/status> <http://www.opengis.net/def/status/valid> .
-<http://www.opengis.net/def/nil/ogc/0/withheld> <http://www.w3.org/2004/02/skos/core#inScheme> <http://www.opengis.net/def/nil> .
-<http://www.opengis.net/def/nil/ogc/0/withheld> <http://www.w3.org/2004/02/skos/core#prefLabel> "withheld"@en .
-<http://www.opengis.net/def/nil/ogc/0/withheld> <http://www.w3.org/2002/07/owl#sameAs> <http://www.opengis.net/def/nil/OGC/0/withheld> .
-<http://www.opengis.net/def/nil/ogc/0/withheld> <http://www.w3.org/2004/02/skos/core#definition> "withheld"@en .
-<http://www.opengis.net/def/nil/ogc/0/withheld> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://www.opengis.net/def/nil/OGC/0/AboveDetectionRange> <http://www.w3.org/2002/07/owl#sameAs> <http://www.opengis.net/def/nil/ogc/0/above-detection-range> .
-<http://www.opengis.net/def/nil/OGC/0/AboveDetectionRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://www.opengis.net/def/nil/OGC/0/AboveDetectionRange> <http://purl.org/dc/terms/modified> "2012-02-14"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://www.opengis.net/def/nil/OGC/0/AboveDetectionRange> <http://www.w3.org/2004/02/skos/core#altLabel> "Above Detection Range"@en .
-<http://www.opengis.net/def/nil/OGC/0/AboveDetectionRange> <http://www.w3.org/2004/02/skos/core#inScheme> <http://www.opengis.net/def/nil> .
-<http://www.opengis.net/def/nil/OGC/0/AboveDetectionRange> <http://www.w3.org/2000/01/rdf-schema#label> "above detection range" .
-<http://www.opengis.net/def/nil/OGC/0/AboveDetectionRange> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.opengis.net/doc/gml#clause-8.2.3.1> .
-<http://www.opengis.net/def/nil/OGC/0/AboveDetectionRange> <http://www.w3.org/2000/01/rdf-schema#label> "above detection range"@en .
-<http://www.opengis.net/def/nil/OGC/0/AboveDetectionRange> <http://www.opengis.net/def/metamodel/ogc-na/status> <http://www.opengis.net/def/status/valid> .
-<http://www.opengis.net/def/nil/OGC/0/AboveDetectionRange> <http://www.w3.org/2004/02/skos/core#definition> "Value was above the detection range of the instrument used to estimate it."@en .
-<http://www.opengis.net/def/nil/OGC/0/AboveDetectionRange> <http://www.w3.org/2004/02/skos/core#prefLabel> "above detection range"@en .
-<http://www.opengis.net/def/nil/OGC/0/AboveDetectionRange> <http://purl.org/dc/elements/1.1/date> "2010-03-23" .
-<http://www.opengis.net/def/nil/OGC/0/AboveDetectionRange> <http://www.opengis.net/def/metamodel/hasProfile> <http://www.opengis.net/def/nil/OGC/0/AboveDetectionRange?_profile=conceptscheme> .
-<http://www.opengis.net/def/nil/OGC/0/AboveDetectionRange> <http://purl.org/dc/elements/1.1/source> "OGC 07-036 Clause 8.2.3" .
-<http://www.opengis.net/def/nil/OGC/0/AboveDetectionRange> <http://purl.org/dc/elements/1.1/creator> "GMLJP2 SWG" .
-<http://www.opengis.net/def/nil/OGC/0/AboveDetectionRange> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.opengis.net/def/nil/OGC/0/AboveDetectionRange?_profile=alt> .
-<http://www.opengis.net/def/nil/OGC/0/AboveDetectionRange> <http://purl.org/dc/terms/created> "2010-03-23" .
-<http://www.opengis.net/def/nil/ogc/0/missing> <http://www.opengis.net/def/metamodel/hasProfile> <http://www.opengis.net/def/nil/ogc/0/missing?_profile=conceptscheme> .
-<http://www.opengis.net/def/nil/ogc/0/missing> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.opengis.net/def/nil/ogc/0/missing?_profile=alt> .
-<http://www.opengis.net/def/nil/ogc/0/missing> <http://www.w3.org/2000/01/rdf-schema#label> "missing"@en .
-<http://www.opengis.net/def/nil/ogc/0/missing> <http://www.opengis.net/def/metamodel/ogc-na/status> <http://www.opengis.net/def/status/valid> .
-<http://www.opengis.net/def/nil/ogc/0/missing> <http://www.w3.org/2004/02/skos/core#inScheme> <http://www.opengis.net/def/nil> .
-<http://www.opengis.net/def/nil/ogc/0/missing> <http://www.w3.org/2004/02/skos/core#prefLabel> "missing"@en .
-<http://www.opengis.net/def/nil/ogc/0/missing> <http://www.w3.org/2002/07/owl#sameAs> <http://www.opengis.net/def/nil/OGC/0/missing> .
-<http://www.opengis.net/def/nil/ogc/0/missing> <http://www.w3.org/2004/02/skos/core#definition> "missing"@en .
-<http://www.opengis.net/def/nil/ogc/0/missing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://www.opengis.net/def/nil/OGC/0/unknown> <http://purl.org/dc/terms/modified> "2012-02-14"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://www.opengis.net/def/nil/OGC/0/unknown> <http://www.w3.org/2004/02/skos/core#prefLabel> "unknown"@en .
-<http://www.opengis.net/def/nil/OGC/0/unknown> <http://www.w3.org/2000/01/rdf-schema#label> "Unknown"@en .
-<http://www.opengis.net/def/nil/OGC/0/unknown> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.opengis.net/def/nil/OGC/0/unknown?_profile=alt> .
-<http://www.opengis.net/def/nil/OGC/0/unknown> <http://www.opengis.net/def/metamodel/hasProfile> <http://www.opengis.net/def/nil/OGC/0/unknown?_profile=conceptscheme> .
-<http://www.opengis.net/def/nil/OGC/0/unknown> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://www.opengis.net/def/nil/OGC/0/unknown> <http://www.w3.org/2004/02/skos/core#definition> "The correct value is not known to, or not computable by, the sender of this data. However, the correct value probably exists"@en .
-<http://www.opengis.net/def/nil/OGC/0/unknown> <http://www.w3.org/2004/02/skos/core#prefLabel> "Unknown"@en .
-<http://www.opengis.net/def/nil/OGC/0/unknown> <http://www.w3.org/2004/02/skos/core#inScheme> <http://www.opengis.net/def/nil> .
-<http://www.opengis.net/def/nil/OGC/0/unknown> <http://www.w3.org/2004/02/skos/core#altLabel> "Unknown"@en .
-<http://www.opengis.net/def/nil/OGC/0/unknown> <http://www.w3.org/2000/01/rdf-schema#comment> "More details are available via the exactMatch reference, which should be used for citation by preference"@en .
-<http://www.opengis.net/def/nil/OGC/0/unknown> <http://purl.org/dc/terms/created> "2010-03-23" .
-<http://www.opengis.net/def/nil/OGC/0/unknown> <http://www.w3.org/2004/02/skos/core#inScheme> <http://www.opengis.net/def/waterml> .
-<http://www.opengis.net/def/nil/OGC/0/unknown> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.opengis.net/doc/gml#clause-8.2.3.1> .
-<http://www.opengis.net/def/nil/OGC/0/unknown> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.opengis.net/def/waterml/2.0/medium/Unknown> .
-<http://www.opengis.net/def/nil/OGC/0/unknown> <http://purl.org/dc/elements/1.1/creator> "GML SWG" .
-<http://www.opengis.net/def/nil/OGC/0/unknown> <http://www.w3.org/2002/07/owl#sameAs> <http://www.opengis.net/def/nil/ogc/0/unknown> .
-<http://www.opengis.net/def/nil/OGC/0/unknown> <http://purl.org/dc/elements/1.1/date> "2010-03-23" .
-<http://www.opengis.net/def/nil/OGC/0/unknown> <http://purl.org/dc/elements/1.1/source> "OGC 07-036 Clause 8.2.3" .
-<http://www.opengis.net/def/nil/OGC/0/unknown> <http://www.w3.org/2000/01/rdf-schema#label> "unknown" .
-<http://www.opengis.net/def/nil/OGC/0/unknown> <http://www.w3.org/2000/01/rdf-schema#label> "unknown"@en .
-<http://www.opengis.net/def/nil/OGC/0/unknown> <http://www.opengis.net/def/metamodel/ogc-na/status> <http://www.opengis.net/def/status/valid> .
-<http://www.opengis.net/def/nil/OGC/0/withheld> <http://purl.org/dc/elements/1.1/source> "OGC 07-036 Clause 8.2.3" .
-<http://www.opengis.net/def/nil/OGC/0/withheld> <http://www.opengis.net/def/metamodel/hasProfile> <http://www.opengis.net/def/nil/OGC/0/withheld?_profile=conceptscheme> .
-<http://www.opengis.net/def/nil/OGC/0/withheld> <http://www.w3.org/2004/02/skos/core#prefLabel> "withheld"@en .
-<http://www.opengis.net/def/nil/OGC/0/withheld> <http://purl.org/dc/elements/1.1/date> "2010-03-23" .
-<http://www.opengis.net/def/nil/OGC/0/withheld> <http://www.w3.org/2004/02/skos/core#altLabel> "Withheld"@en .
-<http://www.opengis.net/def/nil/OGC/0/withheld> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.opengis.net/def/nil/OGC/0/withheld?_profile=alt> .
-<http://www.opengis.net/def/nil/OGC/0/withheld> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://www.opengis.net/def/nil/OGC/0/withheld> <http://www.w3.org/2002/07/owl#sameAs> <http://www.opengis.net/def/nil/ogc/0/withheld> .
-<http://www.opengis.net/def/nil/OGC/0/withheld> <http://www.opengis.net/def/metamodel/ogc-na/status> <http://www.opengis.net/def/status/valid> .
-<http://www.opengis.net/def/nil/OGC/0/withheld> <http://www.w3.org/2004/02/skos/core#definition> "The value is not divulged."@en .
-<http://www.opengis.net/def/nil/OGC/0/withheld> <http://www.w3.org/2000/01/rdf-schema#label> "withheld" .
-<http://www.opengis.net/def/nil/OGC/0/withheld> <http://purl.org/dc/terms/created> "2010-03-23" .
-<http://www.opengis.net/def/nil/OGC/0/withheld> <http://www.w3.org/2000/01/rdf-schema#label> "withheld"@en .
-<http://www.opengis.net/def/nil/OGC/0/withheld> <http://www.w3.org/2004/02/skos/core#inScheme> <http://www.opengis.net/def/nil> .
-<http://www.opengis.net/def/nil/OGC/0/withheld> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.opengis.net/doc/gml#clause-8.2.3.1> .
-<http://www.opengis.net/def/nil/OGC/0/withheld> <http://purl.org/dc/terms/modified> "2012-02-14"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://www.opengis.net/def/nil/OGC/0/withheld> <http://purl.org/dc/elements/1.1/creator> "GML SWG" .
-<http://www.opengis.net/def/nil/ogc/0/unknown> <http://www.opengis.net/def/metamodel/hasProfile> <http://www.opengis.net/def/nil/ogc/0/unknown?_profile=conceptscheme> .
-<http://www.opengis.net/def/nil/ogc/0/unknown> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.opengis.net/def/nil/ogc/0/unknown?_profile=alt> .
-<http://www.opengis.net/def/nil/ogc/0/unknown> <http://www.w3.org/2000/01/rdf-schema#label> "unknown"@en .
-<http://www.opengis.net/def/nil/ogc/0/unknown> <http://www.opengis.net/def/metamodel/ogc-na/status> <http://www.opengis.net/def/status/valid> .
-<http://www.opengis.net/def/nil/ogc/0/unknown> <http://www.w3.org/2004/02/skos/core#inScheme> <http://www.opengis.net/def/nil> .
-<http://www.opengis.net/def/nil/ogc/0/unknown> <http://www.w3.org/2004/02/skos/core#prefLabel> "unknown"@en .
-<http://www.opengis.net/def/nil/ogc/0/unknown> <http://www.w3.org/2002/07/owl#sameAs> <http://www.opengis.net/def/nil/OGC/0/unknown> .
-<http://www.opengis.net/def/nil/ogc/0/unknown> <http://www.w3.org/2004/02/skos/core#definition> "unknown"@en .
-<http://www.opengis.net/def/nil/ogc/0/unknown> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://www.opengis.net/def/nil/ogc/0/inapplicable> <http://www.opengis.net/def/metamodel/hasProfile> <http://www.opengis.net/def/nil/ogc/0/inapplicable?_profile=conceptscheme> .
-<http://www.opengis.net/def/nil/ogc/0/inapplicable> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.opengis.net/def/nil/ogc/0/inapplicable?_profile=alt> .
-<http://www.opengis.net/def/nil/ogc/0/inapplicable> <http://www.w3.org/2000/01/rdf-schema#label> "inapplicable"@en .
-<http://www.opengis.net/def/nil/ogc/0/inapplicable> <http://www.opengis.net/def/metamodel/ogc-na/status> <http://www.opengis.net/def/status/valid> .
-<http://www.opengis.net/def/nil/ogc/0/inapplicable> <http://www.w3.org/2004/02/skos/core#inScheme> <http://www.opengis.net/def/nil> .
-<http://www.opengis.net/def/nil/ogc/0/inapplicable> <http://www.w3.org/2004/02/skos/core#prefLabel> "inapplicable"@en .
-<http://www.opengis.net/def/nil/ogc/0/inapplicable> <http://www.w3.org/2002/07/owl#sameAs> <http://www.opengis.net/def/nil/OGC/0/inapplicable> .
-<http://www.opengis.net/def/nil/ogc/0/inapplicable> <http://www.w3.org/2004/02/skos/core#definition> "inapplicable"@en .
-<http://www.opengis.net/def/nil/ogc/0/inapplicable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://www.opengis.net/def/nil/ogc/0/below-detection-range> <http://www.opengis.net/def/metamodel/hasProfile> <http://www.opengis.net/def/nil/ogc/0/below-detection-range?_profile=conceptscheme> .
-<http://www.opengis.net/def/nil/ogc/0/below-detection-range> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.opengis.net/def/nil/ogc/0/below-detection-range?_profile=alt> .
-<http://www.opengis.net/def/nil/ogc/0/below-detection-range> <http://www.w3.org/2000/01/rdf-schema#label> "below-detection-range"@en .
-<http://www.opengis.net/def/nil/ogc/0/below-detection-range> <http://www.opengis.net/def/metamodel/ogc-na/status> <http://www.opengis.net/def/status/valid> .
-<http://www.opengis.net/def/nil/ogc/0/below-detection-range> <http://www.w3.org/2004/02/skos/core#inScheme> <http://www.opengis.net/def/nil> .
-<http://www.opengis.net/def/nil/ogc/0/below-detection-range> <http://www.w3.org/2004/02/skos/core#prefLabel> "below detection range"@en .
-<http://www.opengis.net/def/nil/ogc/0/below-detection-range> <http://www.w3.org/2002/07/owl#sameAs> <http://www.opengis.net/def/nil/OGC/0/BelowDetectionRange> .
-<http://www.opengis.net/def/nil/ogc/0/below-detection-range> <http://www.w3.org/2004/02/skos/core#definition> "below detection range"@en .
-<http://www.opengis.net/def/nil/ogc/0/below-detection-range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://www.opengis.net/def/nil/OGC/0/inapplicable> <http://www.w3.org/2002/07/owl#sameAs> <http://www.opengis.net/def/nil/ogc/0/inapplicable> .
-<http://www.opengis.net/def/nil/OGC/0/inapplicable> <http://www.w3.org/2004/02/skos/core#definition> "There is no value"@en .
-<http://www.opengis.net/def/nil/OGC/0/inapplicable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://www.opengis.net/def/nil/OGC/0/inapplicable> <http://purl.org/dc/terms/modified> "2012-02-14"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://www.opengis.net/def/nil/OGC/0/inapplicable> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.opengis.net/doc/gml#clause-8.2.3.1> .
-<http://www.opengis.net/def/nil/OGC/0/inapplicable> <http://purl.org/dc/terms/created> "2010-03-23" .
-<http://www.opengis.net/def/nil/OGC/0/inapplicable> <http://www.opengis.net/def/metamodel/ogc-na/status> <http://www.opengis.net/def/status/valid> .
-<http://www.opengis.net/def/nil/OGC/0/inapplicable> <http://www.w3.org/2004/02/skos/core#inScheme> <http://www.opengis.net/def/nil> .
-<http://www.opengis.net/def/nil/OGC/0/inapplicable> <http://purl.org/dc/elements/1.1/creator> "GML SWG" .
-<http://www.opengis.net/def/nil/OGC/0/inapplicable> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.opengis.net/def/nil/OGC/0/inapplicable?_profile=alt> .
-<http://www.opengis.net/def/nil/OGC/0/inapplicable> <http://purl.org/dc/elements/1.1/source> "OGC 07-036 Clause 8.2.3" .
-<http://www.opengis.net/def/nil/OGC/0/inapplicable> <http://www.w3.org/2004/02/skos/core#altLabel> "Inapplicable"@en .
-<http://www.opengis.net/def/nil/OGC/0/inapplicable> <http://purl.org/dc/elements/1.1/date> "2010-03-23" .
-<http://www.opengis.net/def/nil/OGC/0/inapplicable> <http://www.w3.org/2004/02/skos/core#prefLabel> "inapplicable"@en .
-<http://www.opengis.net/def/nil/OGC/0/inapplicable> <http://www.w3.org/2000/01/rdf-schema#label> "inapplicable" .
-<http://www.opengis.net/def/nil/OGC/0/inapplicable> <http://www.w3.org/2000/01/rdf-schema#label> "inapplicable"@en .
-<http://www.opengis.net/def/nil/OGC/0/inapplicable> <http://www.opengis.net/def/metamodel/hasProfile> <http://www.opengis.net/def/nil/OGC/0/inapplicable?_profile=conceptscheme> .
-<http://www.opengis.net/def/nil/> <http://purl.org/dc/terms/provenance> "Generated by the OGC Definitions Server to support integration of the elements of this ConceptScheme into bigger collections. ogc_skos_profile_entailements.ttl" .
-<http://www.opengis.net/def/nil/> <http://www.w3.org/2004/02/skos/core#member> <http://www.opengis.net/def/nil/ogc/0/> .
-<http://www.opengis.net/def/nil/> <http://www.w3.org/2004/02/skos/core#member> <http://www.opengis.net/def/nil/ogc/> .
-<http://www.opengis.net/def/nil/> <http://www.w3.org/2004/02/skos/core#member> <http://www.opengis.net/def/nil/OGC/> .
-<http://www.opengis.net/def/nil/> <http://www.w3.org/2004/02/skos/core#inScheme> <http://www.opengis.net/def/nil> .
-<http://www.opengis.net/def/nil/> <http://www.w3.org/2004/02/skos/core#prefLabel> "Concepts in OGC nils" .
-<http://www.opengis.net/def/nil/> <http://www.w3.org/2004/02/skos/core#definition> "Collection hierarchy for this ConceptScheme" .
-<http://www.opengis.net/def/nil/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Collection> .
-<http://www.opengis.net/def/nil/OGC/0/template> <http://purl.org/dc/terms/created> "2010-03-23" .
-<http://www.opengis.net/def/nil/OGC/0/template> <http://www.opengis.net/def/metamodel/ogc-na/status> <http://www.opengis.net/def/status/valid> .
-<http://www.opengis.net/def/nil/OGC/0/template> <http://www.w3.org/2002/07/owl#sameAs> <http://www.opengis.net/def/nil/ogc/0/template> .
-<http://www.opengis.net/def/nil/OGC/0/template> <http://www.w3.org/2004/02/skos/core#prefLabel> "template"@en .
-<http://www.opengis.net/def/nil/OGC/0/template> <http://www.w3.org/2004/02/skos/core#definition> "The value will be available later"@en .
-<http://www.opengis.net/def/nil/OGC/0/template> <http://purl.org/dc/elements/1.1/date> "2010-03-23" .
-<http://www.opengis.net/def/nil/OGC/0/template> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.opengis.net/def/nil/OGC/0/template?_profile=alt> .
-<http://www.opengis.net/def/nil/OGC/0/template> <http://purl.org/dc/elements/1.1/creator> "GML SWG" .
-<http://www.opengis.net/def/nil/OGC/0/template> <http://www.opengis.net/def/metamodel/hasProfile> <http://www.opengis.net/def/nil/OGC/0/template?_profile=conceptscheme> .
-<http://www.opengis.net/def/nil/OGC/0/template> <http://www.w3.org/2000/01/rdf-schema#label> "template" .
-<http://www.opengis.net/def/nil/OGC/0/template> <http://www.w3.org/2000/01/rdf-schema#label> "template"@en .
-<http://www.opengis.net/def/nil/OGC/0/template> <http://www.w3.org/2004/02/skos/core#inScheme> <http://www.opengis.net/def/nil> .
-<http://www.opengis.net/def/nil/OGC/0/template> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://www.opengis.net/def/nil/OGC/0/template> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.opengis.net/doc/gml#clause-8.2.3.1> .
-<http://www.opengis.net/def/nil/OGC/0/template> <http://www.w3.org/2004/02/skos/core#altLabel> "Template"@en .
-<http://www.opengis.net/def/nil/OGC/0/template> <http://purl.org/dc/elements/1.1/source> "OGC 07-036 Clause 8.2.3" .
-<http://www.opengis.net/def/nil/OGC/0/template> <http://purl.org/dc/terms/modified> "2012-02-14"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://www.opengis.net/def/nil> <http://purl.org/dc/terms/modified> "2023-03-23"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://www.opengis.net/def/nil> <http://purl.org/dc/elements/1.1/source> "8.2.3.1 in OGC 07-036 (GML)" .
-<http://www.opengis.net/def/nil> <http://www.w3.org/2004/02/skos/core#prefLabel> "OGC nils" .
-<http://www.opengis.net/def/nil> <http://www.opengis.net/def/metamodel/ogc-na/collectionView> <http://www.opengis.net/def/nil/> .
-<http://www.opengis.net/def/nil> <http://purl.org/dc/elements/1.1/rights> "Copyright © 2012 Open Geospatial Consortium, Inc. All Rights Reserved." .
-<http://www.opengis.net/def/nil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://www.opengis.net/def/nil> <http://www.w3.org/2004/02/skos/core#definition> "OGC nils" .
-<http://www.opengis.net/def/nil> <http://www.w3.org/2004/02/skos/core#historyNote> "refactored from original omnibus concept scheme into a separate scheme for reuse" .
-<http://www.opengis.net/def/nil> <http://purl.org/dc/elements/1.1/creator> "Rob Atkinson, OGC" .
-<http://www.opengis.net/def/nil> <http://purl.org/dc/terms/source> <http://www.opengis.net/def/entities/bodies/ogcna> .
-<http://www.opengis.net/def/nil> <http://www.w3.org/2002/07/owl#imports> <http://www.opengis.net/def/ogc-na> .
-<http://www.opengis.net/def/nil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
-<http://www.opengis.net/def/nil> <http://purl.org/dc/terms/created> "2012-02-15"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://www.opengis.net/def/nil> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.opengis.net/doc/ogc-na-policies> .
-<http://www.opengis.net/def/nil> <http://purl.org/dc/elements/1.1/title> "Nil reasons" .
-<http://www.opengis.net/def/nil> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.opengis.net/def/nil?_view=collection> .
-<http://www.opengis.net/def/nil> <http://www.opengis.net/def/metamodel/ogc-na/collectionView> <http://www.opengis.net/def/ogc/> .
-<http://www.opengis.net/def/nil> <http://www.w3.org/2000/01/rdf-schema#comment> "The URIs for resources in this document were assigned in accordance with the OGC Naming policies, overseen by the OGC Naming Authority. They are not otherwise managed as part of a delegated governance via a specific artefact, such as CodeLists from a normative schema." .
-<http://www.opengis.net/def/nil> <http://purl.org/dc/terms/rights> <http://www.opengeospatial.org/ogc/software> .
-<http://www.opengis.net/def/nil/ogc/0/template> <http://www.opengis.net/def/metamodel/hasProfile> <http://www.opengis.net/def/nil/ogc/0/template?_profile=conceptscheme> .
-<http://www.opengis.net/def/nil/ogc/0/template> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.opengis.net/def/nil/ogc/0/template?_profile=alt> .
-<http://www.opengis.net/def/nil/ogc/0/template> <http://www.w3.org/2000/01/rdf-schema#label> "template"@en .
-<http://www.opengis.net/def/nil/ogc/0/template> <http://www.opengis.net/def/metamodel/ogc-na/status> <http://www.opengis.net/def/status/valid> .
-<http://www.opengis.net/def/nil/ogc/0/template> <http://www.w3.org/2004/02/skos/core#inScheme> <http://www.opengis.net/def/nil> .
-<http://www.opengis.net/def/nil/ogc/0/template> <http://www.w3.org/2004/02/skos/core#prefLabel> "template"@en .
-<http://www.opengis.net/def/nil/ogc/0/template> <http://www.w3.org/2002/07/owl#sameAs> <http://www.opengis.net/def/nil/OGC/0/template> .
-<http://www.opengis.net/def/nil/ogc/0/template> <http://www.w3.org/2004/02/skos/core#definition> "template"@en .
-<http://www.opengis.net/def/nil/ogc/0/template> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://www.opengis.net/def/nil/ogc/0/above-detection-range> <http://www.opengis.net/def/metamodel/hasProfile> <http://www.opengis.net/def/nil/ogc/0/above-detection-range?_profile=conceptscheme> .
-<http://www.opengis.net/def/nil/ogc/0/above-detection-range> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.opengis.net/def/nil/ogc/0/above-detection-range?_profile=alt> .
-<http://www.opengis.net/def/nil/ogc/0/above-detection-range> <http://www.w3.org/2000/01/rdf-schema#label> "above-detection-range"@en .
-<http://www.opengis.net/def/nil/ogc/0/above-detection-range> <http://www.opengis.net/def/metamodel/ogc-na/status> <http://www.opengis.net/def/status/valid> .
-<http://www.opengis.net/def/nil/ogc/0/above-detection-range> <http://www.w3.org/2004/02/skos/core#inScheme> <http://www.opengis.net/def/nil> .
-<http://www.opengis.net/def/nil/ogc/0/above-detection-range> <http://www.w3.org/2004/02/skos/core#prefLabel> "above detection range"@en .
-<http://www.opengis.net/def/nil/ogc/0/above-detection-range> <http://www.w3.org/2002/07/owl#sameAs> <http://www.opengis.net/def/nil/OGC/0/AboveDetectionRange> .
-<http://www.opengis.net/def/nil/ogc/0/above-detection-range> <http://www.w3.org/2004/02/skos/core#definition> "above detection range"@en .
-<http://www.opengis.net/def/nil/ogc/0/above-detection-range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://www.opengis.net/def/nil/OGC/0/BelowDetectionRange> <http://www.opengis.net/def/metamodel/hasProfile> <http://www.opengis.net/def/nil/OGC/0/BelowDetectionRange?_profile=conceptscheme> .
-<http://www.opengis.net/def/nil/OGC/0/BelowDetectionRange> <http://purl.org/dc/elements/1.1/source> "OGC 07-036 Clause 8.2.3" .
-<http://www.opengis.net/def/nil/OGC/0/BelowDetectionRange> <http://www.w3.org/2000/01/rdf-schema#label> "below detection range" .
-<http://www.opengis.net/def/nil/OGC/0/BelowDetectionRange> <http://www.opengis.net/def/metamodel/ogc-na/status> <http://www.opengis.net/def/status/valid> .
-<http://www.opengis.net/def/nil/OGC/0/BelowDetectionRange> <http://www.w3.org/2000/01/rdf-schema#label> "below detection range"@en .
-<http://www.opengis.net/def/nil/OGC/0/BelowDetectionRange> <http://purl.org/dc/terms/created> "2010-03-23" .
-<http://www.opengis.net/def/nil/OGC/0/BelowDetectionRange> <http://purl.org/dc/elements/1.1/creator> "GMLJP2 SWG" .
-<http://www.opengis.net/def/nil/OGC/0/BelowDetectionRange> <http://purl.org/dc/terms/modified> "2012-02-14"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://www.opengis.net/def/nil/OGC/0/BelowDetectionRange> <http://www.w3.org/2004/02/skos/core#inScheme> <http://www.opengis.net/def/nil> .
-<http://www.opengis.net/def/nil/OGC/0/BelowDetectionRange> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.opengis.net/doc/gml#clause-8.2.3.1> .
-<http://www.opengis.net/def/nil/OGC/0/BelowDetectionRange> <http://www.w3.org/2004/02/skos/core#prefLabel> "below detection range"@en .
-<http://www.opengis.net/def/nil/OGC/0/BelowDetectionRange> <http://purl.org/dc/elements/1.1/date> "2010-03-23" .
-<http://www.opengis.net/def/nil/OGC/0/BelowDetectionRange> <http://www.w3.org/2002/07/owl#sameAs> <http://www.opengis.net/def/nil/ogc/0/below-detection-range> .
-<http://www.opengis.net/def/nil/OGC/0/BelowDetectionRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://www.opengis.net/def/nil/OGC/0/BelowDetectionRange> <http://www.w3.org/2004/02/skos/core#definition> "Value was below the detection range of the instrument used to estimate it."@en .
-<http://www.opengis.net/def/nil/OGC/0/BelowDetectionRange> <http://www.w3.org/2004/02/skos/core#altLabel> "Below Detection Range"@en .
-<http://www.opengis.net/def/nil/OGC/0/BelowDetectionRange> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.opengis.net/def/nil/OGC/0/BelowDetectionRange?_profile=alt> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct:  <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+
+<http://www.opengis.net/def/nil/OGC/0/missing>
+        a                skos:Concept ;
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "More details are available via the exactMatch reference, which should be used for citation by preference"@en ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "missing" , "missing"@en , "Missing"@en ;
+        <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+                <http://www.opengis.net/def/nil/OGC/0/missing?_profile=alt> , <http://www.opengis.net/doc/gml#clause-8.2.3.1> ;
+        <http://purl.org/dc/elements/1.1/creator>
+                "GML SWG" ;
+        <http://purl.org/dc/elements/1.1/date>
+                "2010-03-23" ;
+        <http://purl.org/dc/elements/1.1/source>
+                "OGC 07-036 Clause 8.2.3" ;
+        dct:created      "2010-03-23" ;
+        dct:modified     "2012-02-14"^^<http://www.w3.org/2001/XMLSchema#date> ;
+        <http://www.opengis.net/def/metamodel/hasProfile>
+                <http://www.opengis.net/def/nil/OGC/0/missing?_profile=conceptscheme> ;
+        <http://www.opengis.net/def/metamodel/ogc-na/status>
+                <http://www.opengis.net/def/status/valid> ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                <http://www.opengis.net/def/nil/ogc/0/missing> ;
+        skos:altLabel    "Missing"@en ;
+        skos:definition  "The correct value is not readily available to the sender of this data. Furthermore, a correct value may not exist"@en ;
+        skos:exactMatch  <http://www.opengis.net/def/waterml/2.0/quality/missing> ;
+        skos:inScheme    <http://www.opengis.net/def/nil> , <http://www.opengis.net/def/waterml> ;
+        skos:prefLabel   "Missing"@en , "missing"@en .
+
+<http://www.opengis.net/def/nil/ogc/0/withheld>
+        a                skos:Concept ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "withheld"@en ;
+        <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+                <http://www.opengis.net/def/nil/ogc/0/withheld?_profile=alt> ;
+        <http://www.opengis.net/def/metamodel/hasProfile>
+                <http://www.opengis.net/def/nil/ogc/0/withheld?_profile=conceptscheme> ;
+        <http://www.opengis.net/def/metamodel/ogc-na/status>
+                <http://www.opengis.net/def/status/valid> ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                <http://www.opengis.net/def/nil/OGC/0/withheld> ;
+        skos:definition  "withheld"@en ;
+        skos:inScheme    <http://www.opengis.net/def/nil> ;
+        skos:prefLabel   "withheld"@en .
+
+<http://www.opengis.net/def/nil/OGC/0/AboveDetectionRange>
+        a                skos:Concept ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "above detection range" , "above detection range"@en ;
+        <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+                <http://www.opengis.net/doc/gml#clause-8.2.3.1> , <http://www.opengis.net/def/nil/OGC/0/AboveDetectionRange?_profile=alt> ;
+        <http://purl.org/dc/elements/1.1/creator>
+                "GMLJP2 SWG" ;
+        <http://purl.org/dc/elements/1.1/date>
+                "2010-03-23" ;
+        <http://purl.org/dc/elements/1.1/source>
+                "OGC 07-036 Clause 8.2.3" ;
+        dct:created      "2010-03-23" ;
+        dct:modified     "2012-02-14"^^<http://www.w3.org/2001/XMLSchema#date> ;
+        <http://www.opengis.net/def/metamodel/hasProfile>
+                <http://www.opengis.net/def/nil/OGC/0/AboveDetectionRange?_profile=conceptscheme> ;
+        <http://www.opengis.net/def/metamodel/ogc-na/status>
+                <http://www.opengis.net/def/status/valid> ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                <http://www.opengis.net/def/nil/ogc/0/above-detection-range> ;
+        skos:altLabel    "Above Detection Range"@en ;
+        skos:definition  "Value was above the detection range of the instrument used to estimate it."@en ;
+        skos:inScheme    <http://www.opengis.net/def/nil> ;
+        skos:prefLabel   "above detection range"@en .
+
+<http://www.opengis.net/def/nil/ogc/0/missing>
+        a                skos:Concept ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "missing"@en ;
+        <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+                <http://www.opengis.net/def/nil/ogc/0/missing?_profile=alt> ;
+        <http://www.opengis.net/def/metamodel/hasProfile>
+                <http://www.opengis.net/def/nil/ogc/0/missing?_profile=conceptscheme> ;
+        <http://www.opengis.net/def/metamodel/ogc-na/status>
+                <http://www.opengis.net/def/status/valid> ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                <http://www.opengis.net/def/nil/OGC/0/missing> ;
+        skos:definition  "missing"@en ;
+        skos:inScheme    <http://www.opengis.net/def/nil> ;
+        skos:prefLabel   "missing"@en .
+
+<http://www.opengis.net/def/nil/OGC/0/unknown>
+        a                skos:Concept ;
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "More details are available via the exactMatch reference, which should be used for citation by preference"@en ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Unknown"@en , "unknown" , "unknown"@en ;
+        <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+                <http://www.opengis.net/def/nil/OGC/0/unknown?_profile=alt> , <http://www.opengis.net/doc/gml#clause-8.2.3.1> ;
+        <http://purl.org/dc/elements/1.1/creator>
+                "GML SWG" ;
+        <http://purl.org/dc/elements/1.1/date>
+                "2010-03-23" ;
+        <http://purl.org/dc/elements/1.1/source>
+                "OGC 07-036 Clause 8.2.3" ;
+        dct:created      "2010-03-23" ;
+        dct:modified     "2012-02-14"^^<http://www.w3.org/2001/XMLSchema#date> ;
+        <http://www.opengis.net/def/metamodel/hasProfile>
+                <http://www.opengis.net/def/nil/OGC/0/unknown?_profile=conceptscheme> ;
+        <http://www.opengis.net/def/metamodel/ogc-na/status>
+                <http://www.opengis.net/def/status/valid> ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                <http://www.opengis.net/def/nil/ogc/0/unknown> ;
+        skos:altLabel    "Unknown"@en ;
+        skos:definition  "The correct value is not known to, or not computable by, the sender of this data. However, the correct value probably exists"@en ;
+        skos:exactMatch  <http://www.opengis.net/def/waterml/2.0/medium/Unknown> ;
+        skos:inScheme    <http://www.opengis.net/def/nil> , <http://www.opengis.net/def/waterml> ;
+        skos:prefLabel   "unknown"@en , "Unknown"@en .
+
+<http://www.opengis.net/def/nil/OGC/0/withheld>
+        a                skos:Concept ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "withheld" , "withheld"@en ;
+        <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+                <http://www.opengis.net/def/nil/OGC/0/withheld?_profile=alt> , <http://www.opengis.net/doc/gml#clause-8.2.3.1> ;
+        <http://purl.org/dc/elements/1.1/creator>
+                "GML SWG" ;
+        <http://purl.org/dc/elements/1.1/date>
+                "2010-03-23" ;
+        <http://purl.org/dc/elements/1.1/source>
+                "OGC 07-036 Clause 8.2.3" ;
+        dct:created      "2010-03-23" ;
+        dct:modified     "2012-02-14"^^<http://www.w3.org/2001/XMLSchema#date> ;
+        <http://www.opengis.net/def/metamodel/hasProfile>
+                <http://www.opengis.net/def/nil/OGC/0/withheld?_profile=conceptscheme> ;
+        <http://www.opengis.net/def/metamodel/ogc-na/status>
+                <http://www.opengis.net/def/status/valid> ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                <http://www.opengis.net/def/nil/ogc/0/withheld> ;
+        skos:altLabel    "Withheld"@en ;
+        skos:definition  "The value is not divulged."@en ;
+        skos:inScheme    <http://www.opengis.net/def/nil> ;
+        skos:prefLabel   "withheld"@en .
+
+<http://www.opengis.net/def/nil/ogc/0/unknown>
+        a                skos:Concept ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "unknown"@en ;
+        <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+                <http://www.opengis.net/def/nil/ogc/0/unknown?_profile=alt> ;
+        <http://www.opengis.net/def/metamodel/hasProfile>
+                <http://www.opengis.net/def/nil/ogc/0/unknown?_profile=conceptscheme> ;
+        <http://www.opengis.net/def/metamodel/ogc-na/status>
+                <http://www.opengis.net/def/status/valid> ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                <http://www.opengis.net/def/nil/OGC/0/unknown> ;
+        skos:definition  "unknown"@en ;
+        skos:inScheme    <http://www.opengis.net/def/nil> ;
+        skos:prefLabel   "unknown"@en .
+
+<http://www.opengis.net/def/nil/ogc/0/inapplicable>
+        a                skos:Concept ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "inapplicable"@en ;
+        <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+                <http://www.opengis.net/def/nil/ogc/0/inapplicable?_profile=alt> ;
+        <http://www.opengis.net/def/metamodel/hasProfile>
+                <http://www.opengis.net/def/nil/ogc/0/inapplicable?_profile=conceptscheme> ;
+        <http://www.opengis.net/def/metamodel/ogc-na/status>
+                <http://www.opengis.net/def/status/valid> ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                <http://www.opengis.net/def/nil/OGC/0/inapplicable> ;
+        skos:definition  "inapplicable"@en ;
+        skos:inScheme    <http://www.opengis.net/def/nil> ;
+        skos:prefLabel   "inapplicable"@en .
+
+<http://www.opengis.net/def/nil/ogc/0/below-detection-range>
+        a                skos:Concept ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "below-detection-range"@en ;
+        <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+                <http://www.opengis.net/def/nil/ogc/0/below-detection-range?_profile=alt> ;
+        <http://www.opengis.net/def/metamodel/hasProfile>
+                <http://www.opengis.net/def/nil/ogc/0/below-detection-range?_profile=conceptscheme> ;
+        <http://www.opengis.net/def/metamodel/ogc-na/status>
+                <http://www.opengis.net/def/status/valid> ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                <http://www.opengis.net/def/nil/OGC/0/BelowDetectionRange> ;
+        skos:definition  "below detection range"@en ;
+        skos:inScheme    <http://www.opengis.net/def/nil> ;
+        skos:prefLabel   "below detection range"@en .
+
+<http://www.opengis.net/def/nil/OGC/0/inapplicable>
+        a                skos:Concept ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "inapplicable" , "inapplicable"@en ;
+        <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+                <http://www.opengis.net/doc/gml#clause-8.2.3.1> , <http://www.opengis.net/def/nil/OGC/0/inapplicable?_profile=alt> ;
+        <http://purl.org/dc/elements/1.1/creator>
+                "GML SWG" ;
+        <http://purl.org/dc/elements/1.1/date>
+                "2010-03-23" ;
+        <http://purl.org/dc/elements/1.1/source>
+                "OGC 07-036 Clause 8.2.3" ;
+        dct:created      "2010-03-23" ;
+        dct:modified     "2012-02-14"^^<http://www.w3.org/2001/XMLSchema#date> ;
+        <http://www.opengis.net/def/metamodel/hasProfile>
+                <http://www.opengis.net/def/nil/OGC/0/inapplicable?_profile=conceptscheme> ;
+        <http://www.opengis.net/def/metamodel/ogc-na/status>
+                <http://www.opengis.net/def/status/valid> ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                <http://www.opengis.net/def/nil/ogc/0/inapplicable> ;
+        skos:altLabel    "Inapplicable"@en ;
+        skos:definition  "There is no value"@en ;
+        skos:inScheme    <http://www.opengis.net/def/nil> ;
+        skos:prefLabel   "inapplicable"@en .
+
+<http://www.opengis.net/def/nil/OGC/0/template>
+        a                skos:Concept ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "template" , "template"@en ;
+        <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+                <http://www.opengis.net/def/nil/OGC/0/template?_profile=alt> , <http://www.opengis.net/doc/gml#clause-8.2.3.1> ;
+        <http://purl.org/dc/elements/1.1/creator>
+                "GML SWG" ;
+        <http://purl.org/dc/elements/1.1/date>
+                "2010-03-23" ;
+        <http://purl.org/dc/elements/1.1/source>
+                "OGC 07-036 Clause 8.2.3" ;
+        dct:created      "2010-03-23" ;
+        dct:modified     "2012-02-14"^^<http://www.w3.org/2001/XMLSchema#date> ;
+        <http://www.opengis.net/def/metamodel/hasProfile>
+                <http://www.opengis.net/def/nil/OGC/0/template?_profile=conceptscheme> ;
+        <http://www.opengis.net/def/metamodel/ogc-na/status>
+                <http://www.opengis.net/def/status/valid> ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                <http://www.opengis.net/def/nil/ogc/0/template> ;
+        skos:altLabel    "Template"@en ;
+        skos:definition  "The value will be available later"@en ;
+        skos:inScheme    <http://www.opengis.net/def/nil> ;
+        skos:prefLabel   "template"@en .
+
+<http://www.opengis.net/def/nil>
+        a                 <http://www.w3.org/2002/07/owl#Ontology> , skos:ConceptScheme ;
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "The URIs for resources in this document were assigned in accordance with the OGC Naming policies, overseen by the OGC Naming Authority. They are not otherwise managed as part of a delegated governance via a specific artefact, such as CodeLists from a normative schema." ;
+        <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+                <http://www.opengis.net/doc/ogc-na-policies> , <http://www.opengis.net/def/nil?_view=collection> ;
+        <http://purl.org/dc/elements/1.1/creator>
+                "Rob Atkinson, OGC" ;
+        <http://purl.org/dc/elements/1.1/rights>
+                "Copyright © 2012 Open Geospatial Consortium, Inc. All Rights Reserved." ;
+        <http://purl.org/dc/elements/1.1/source>
+                "8.2.3.1 in OGC 07-036 (GML)" ;
+        <http://purl.org/dc/elements/1.1/title>
+                "Nil reasons" ;
+        dct:created       "2012-02-15"^^<http://www.w3.org/2001/XMLSchema#date> ;
+        dct:modified      "2023-03-23"^^<http://www.w3.org/2001/XMLSchema#date> ;
+        dct:rights        <http://www.opengeospatial.org/ogc/software> ;
+        dct:source        <http://www.opengis.net/def/entities/bodies/ogcna> ;
+        <http://www.opengis.net/def/metamodel/ogc-na/collectionView>
+                <http://www.opengis.net/def/nil/> , <http://www.opengis.net/def/ogc/> ;
+        <http://www.w3.org/2002/07/owl#imports>
+                <http://www.opengis.net/def/ogc-na> ;
+        skos:definition   "OGC nils" ;
+        skos:historyNote  "refactored from original omnibus concept scheme into a separate scheme for reuse" ;
+        skos:prefLabel    "OGC nils" .
+
+<http://www.opengis.net/def/nil/ogc/0/template>
+        a                skos:Concept ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "template"@en ;
+        <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+                <http://www.opengis.net/def/nil/ogc/0/template?_profile=alt> ;
+        <http://www.opengis.net/def/metamodel/hasProfile>
+                <http://www.opengis.net/def/nil/ogc/0/template?_profile=conceptscheme> ;
+        <http://www.opengis.net/def/metamodel/ogc-na/status>
+                <http://www.opengis.net/def/status/valid> ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                <http://www.opengis.net/def/nil/OGC/0/template> ;
+        skos:definition  "template"@en ;
+        skos:inScheme    <http://www.opengis.net/def/nil> ;
+        skos:prefLabel   "template"@en .
+
+<http://www.opengis.net/def/nil/ogc/0/above-detection-range>
+        a                skos:Concept ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "above-detection-range"@en ;
+        <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+                <http://www.opengis.net/def/nil/ogc/0/above-detection-range?_profile=alt> ;
+        <http://www.opengis.net/def/metamodel/hasProfile>
+                <http://www.opengis.net/def/nil/ogc/0/above-detection-range?_profile=conceptscheme> ;
+        <http://www.opengis.net/def/metamodel/ogc-na/status>
+                <http://www.opengis.net/def/status/valid> ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                <http://www.opengis.net/def/nil/OGC/0/AboveDetectionRange> ;
+        skos:definition  "above detection range"@en ;
+        skos:inScheme    <http://www.opengis.net/def/nil> ;
+        skos:prefLabel   "above detection range"@en .
+
+<http://www.opengis.net/def/nil/OGC/0/BelowDetectionRange>
+        a                skos:Concept ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "below detection range" , "below detection range"@en ;
+        <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+                <http://www.opengis.net/doc/gml#clause-8.2.3.1> , <http://www.opengis.net/def/nil/OGC/0/BelowDetectionRange?_profile=alt> ;
+        <http://purl.org/dc/elements/1.1/creator>
+                "GMLJP2 SWG" ;
+        <http://purl.org/dc/elements/1.1/date>
+                "2010-03-23" ;
+        <http://purl.org/dc/elements/1.1/source>
+                "OGC 07-036 Clause 8.2.3" ;
+        dct:created      "2010-03-23" ;
+        dct:modified     "2012-02-14"^^<http://www.w3.org/2001/XMLSchema#date> ;
+        <http://www.opengis.net/def/metamodel/hasProfile>
+                <http://www.opengis.net/def/nil/OGC/0/BelowDetectionRange?_profile=conceptscheme> ;
+        <http://www.opengis.net/def/metamodel/ogc-na/status>
+                <http://www.opengis.net/def/status/valid> ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                <http://www.opengis.net/def/nil/ogc/0/below-detection-range> ;
+        skos:altLabel    "Below Detection Range"@en ;
+        skos:definition  "Value was below the detection range of the instrument used to estimate it."@en ;
+        skos:inScheme    <http://www.opengis.net/def/nil> ;
+        skos:prefLabel   "below detection range"@en .

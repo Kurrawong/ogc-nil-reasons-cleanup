@@ -2,7 +2,7 @@
 
 import os
 from pathlib import Path
-from rdflib import Graph, Namespace, URIRef, Literal
+from rdflib import Graph, Namespace, URIRef, Literal, OWL
 from rdflib.namespace import SKOS, RDF, RDFS
 
 def clean_rdf():
@@ -15,9 +15,9 @@ def clean_rdf():
         'gml': Namespace("http://www.opengis.net/doc/gml#"),
         'nil': Namespace("http://www.opengis.net/def/nil/OGC/0/"),
         'status': Namespace("http://www.opengis.net/def/status/"),
-        'knil': Namespace("https://kurrawong.ai/vocab/nil/1.0/"),
         'mm': Namespace("http://www.opengis.net/def/metamodel/"),
         'mmon': Namespace("http://www.opengis.net/def/metamodel/ogc-na/"),
+        'schema': Namespace("https://schema.org/"),
     }
     
     for rdf_file in download_dir.glob("*.ttl"):
@@ -45,19 +45,68 @@ def clean_rdf():
         g.remove((None, mm.hasProfile, None))
         g.remove((None, RDFS.seeAlso, None))
         
-        # Fix date datatypes - ensure all dates have XSD date datatype
+        # Update predicates to use schema.org vocabulary
         dcterms = Namespace("http://purl.org/dc/terms/")
         dc = Namespace("http://purl.org/dc/elements/1.1/")
+        schema = additional_namespaces['schema']
         xsd = Namespace("http://www.w3.org/2001/XMLSchema#")
+        owl = Namespace("http://www.w3.org/2002/07/owl#")
         
-        # Find and fix date literals without proper datatype
-        date_properties = [dcterms.created, dcterms.modified, dc.date]
-        for date_prop in date_properties:
-            for s, p, o in list(g.triples((None, date_prop, None))):
-                if isinstance(o, Literal) and o.datatype != xsd.date:
-                    # Remove old literal and add with proper datatype
-                    g.remove((s, p, o))
-                    g.add((s, p, Literal(str(o), datatype=xsd.date)))
+        # Convert predicates to schema.org equivalents
+        predicate_mappings = {
+            dc.creator: schema.creator,
+            dcterms.created: schema.dateCreated,
+            dcterms.modified: schema.dateModified,
+            dcterms.rights: schema.license,
+            dc.source: schema.citation,
+            dcterms.source: schema.citation,
+            dc.rights: schema.copyrightNotice
+        }
+        
+        # Apply predicate mappings
+        for old_pred, new_pred in predicate_mappings.items():
+            for s, p, o in list(g.triples((None, old_pred, None))):
+                g.remove((s, p, o))
+                # Ensure dates have proper datatype
+                if new_pred in [schema.dateCreated, schema.dateModified] and isinstance(o, Literal):
+                    if o.datatype != xsd.date:
+                        o = Literal(str(o), datatype=xsd.date)
+                g.add((s, new_pred, o))
+        
+        # Remove dc:date predicates entirely
+        g.remove((None, dc.date, None))
+        
+        # Remove owl:imports predicates
+        g.remove((None, owl.imports, None))
+
+        # Remove dc:title "Nil reasons" ;
+        g.remove((None, dc.title, None))
+        
+        # Fix creator and publisher for main concept scheme to meet validation requirements
+        og_nil = additional_namespaces['ogc']['nil']
+        rob_atkinson_iri = URIRef("https://orcid.org/0000-0002-7878-2693")
+        ogc_na_iri = URIRef("http://www.opengis.net/def/entities/bodies/ogcna")
+
+        g.add((rob_atkinson_iri, RDF.type, schema.Person))
+        g.add((rob_atkinson_iri, schema.name, Literal("Robert Atkinson")))
+
+        g.add((ogc_na_iri, RDF.type, schema.Organization))
+
+        # remove any collectionView triples
+        g.remove((None, additional_namespaces["mmon"]["collectionView"], None))
+
+        # remove owl ontology
+        g.remove((None, RDF.type, OWL.Ontology))
+        
+        # Convert string creator to IRI and add publisher
+        for s, p, o in list(g.triples((og_nil, schema.creator, None))):
+            if isinstance(o, Literal):  # If creator is a string literal
+                g.remove((s, p, o))
+                g.add((s, schema.creator, rob_atkinson_iri))
+        
+        # Add publisher if not present
+        if not list(g.triples((og_nil, schema.publisher, None))):
+            g.add((og_nil, schema.publisher, ogc_na_iri))
         
         # Organize labels using proper SKOS semantics
         for subject in g.subjects(RDF.type, SKOS.Concept):
@@ -103,34 +152,13 @@ def clean_rdf():
                     alt_text = capitalized_versions[0][0]  # Use first capitalized version
                     g.add((subject, SKOS.altLabel, Literal(alt_text, lang=lang)))
         
-        # Add versioning metadata for your derivative work
-        knil = additional_namespaces['knil']
-        og_nil = additional_namespaces['ogc']['nil']
-        dcterms = Namespace("http://purl.org/dc/terms/")
-        owl = Namespace("http://www.w3.org/2002/07/owl#")
-        xsd = Namespace("http://www.w3.org/2001/XMLSchema#")
-        
-        # Create your versioned ConceptScheme
-        g.add((knil[''], RDF.type, SKOS.ConceptScheme))
-        g.add((knil[''], dcterms.title, Literal("Nil reasons (Kurrawong derivative v1.0)", lang="en")))
-        g.add((knil[''], dcterms.creator, URIRef("https://orcid.org/0000-0002-3322-1868")))
-        g.add((knil[''], dcterms.modified, Literal("2025-09-02", datatype=xsd.date)))
-        g.add((knil[''], dcterms.isVersionOf, og_nil))
-        g.add((knil[''], owl.versionInfo, Literal("1.0")))
-        g.add((knil[''], RDFS.comment, Literal("Derivative work of OGC nil reasons with uppercase-only concepts and hasTopConcept relationships. Intended for contribution back to OGC.", lang="en")))
-        
-        # Update concepts to point to your scheme
-        for concept in g.subjects(SKOS.inScheme, og_nil):
-            if str(concept).startswith('http://www.opengis.net/def/nil/ogc/0/'):
-                g.add((concept, SKOS.inScheme, knil['']))
-        
         # Add hasTopConcept triples (inverse of inScheme)
         for s, p, o in g.triples((None, SKOS.inScheme, None)):
             if s != URIRef("http://www.opengis.net/def/nil/"):
                 g.add((o, SKOS.hasTopConcept, s))
         
         # Output cleaned turtle
-        output_file = cleaned_dir / "updated.ttl"
+        output_file = cleaned_dir / "nils.ttl"
         g.serialize(destination=output_file, format="turtle")
         print(f"Cleaned file saved to {output_file}")
 
